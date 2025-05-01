@@ -4,7 +4,7 @@
 
 # For Inbound calls
 
-## Install twilio cli:: 
+## Install twilio cli
 
 ### using apt 
 
