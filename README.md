@@ -99,6 +99,5 @@ Navigate to Setting and Copy your SIP-URI
         "livekit-agents[deepgram,openai,cartesia,silero,turn-detector]~=1.0" \
         "livekit-plugins-noise-cancellation~=0.2" \
         "python-dotenv"
-      "
 
   
