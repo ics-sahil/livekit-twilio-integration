@@ -105,4 +105,25 @@ Navigate to Setting and Copy your SIP-URI
 - Deepgram  , DEEPGRAM_API_KEY
 - OpenAI , OPENAI_API_KEY
 - Cartesia , CARTESIA_API_KEY
-  
+
+
+#### Download model files
+##### To use the turn-detector, silero, or noise-cancellation plugins, you first need to download the model files:
+
+      python main.py download-files
+
+#### Speak to your agent
+##### Start your agent in console mode to run inside your terminal:
+
+      python main.py console
+
+#### Connect to playground
+##### Start your agent in **dev** mode to connect it to LiveKit and make it available from anywhere on the internet:
+
+      python main.py dev
+
+#### Now test connection from twilio UI
+
+Select Elastic SIP trunk >> select Your trunk >> Origination >> Make test call.
+
+You will be able to see session being created with livekit on your dev terminal.
