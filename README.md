@@ -18,9 +18,10 @@
 
 ## Now in order to use twilio cli
 - Create an account in twilio (Skip this step in case you already have an account)
-- buy a number run 
+- buy a number run:
+
+    ```
     twilio login
-    twilio profiles:use <your-short-hand-profile-identifier>
     
 ### Create a SIP trunk using twilio cli
   #### Make sure domain name of your SIP trunk must end with (pstn.twilio.com) 
