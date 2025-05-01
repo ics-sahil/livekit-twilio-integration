@@ -100,4 +100,9 @@ Navigate to Setting and Copy your SIP-URI
         "livekit-plugins-noise-cancellation~=0.2" \
         "python-dotenv"
 
+#### Your agent strings together three specialized providers into a high-performance voice pipeline. You need accounts and API keys for each.
+
+- Deepgram  , DEEPGRAM_API_KEY
+- OpenAI , OPENAI_API_KEY
+- Cartesia , CARTESIA_API_KEY
   
