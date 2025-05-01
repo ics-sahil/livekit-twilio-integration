@@ -18,9 +18,10 @@
 
 ## Now in order to use twilio cli
 - Create an account in twilio (Skip this step in case you already have an account)
-- buy a number run 
+- buy a number run:
+
+    ```
     twilio login
-    twilio profiles:use <your-short-hand-profile-identifier>
     
 ### Create a SIP trunk using twilio cli
   #### Make sure domain name of your SIP trunk must end with (pstn.twilio.com) 
@@ -29,13 +30,13 @@
         --friendly-name "My test trunk" \
         --domain-name "my-test-trunk.pstn.twilio.com"
 
-### After running above command you will recieve <TWILIO-TRUNK-ID> , Copy your  <TWILIO-TRUNK-ID> and save it
+### After running above command you will recieve TWILIO-TRUNK-ID , Copy your TWILIO-TRUNK-ID and save it
 
 ## Now you have to configure your trunk for inbound calls:
 
 #### Configure an origination URI aka <you SIP host>
 Go to liveKit. Create an account in case you dont have one.
-Navigate to Setting and Copy you <SIP-URI>
+Navigate to Setting and Copy your SIP-URI
 
     twilio api trunking v1 trunks origination-urls create \
         --trunk-sid <TWILIO-TRUNK-ID> \
@@ -44,7 +45,7 @@ Navigate to Setting and Copy you <SIP-URI>
         --weight 1 --priority 1 --enabled
 
 ## Associate phone Number and trunk
-#### For this you need <Twilio-Trunk-SID> and <Twilio-Phone-Number-SID> If you have them saved than you can use them else you can get them  by following ways. 
+#### For this you need Twilio-Trunk-SID and Twilio-Phone-Number-SID If you have them saved than you can use them else you can get them  by following ways. 
   - To list phone numbers:
  
         twilio phone-numbers list
@@ -80,3 +81,12 @@ Navigate to Setting and Copy you <SIP-URI>
         lk cloud auth
 
 - You'll be prompted to set the current project as default, select Yes. This can be changed later by editing the config.yaml file (the path to which will be logged after running the above commands)
+
+#### Create inbound trunk using inbound-trunk.json , make sure to update numbers :
+      lk sip inbound create inbound-trunk.json
+
+#### Create dispatcher rule 
+- As atleast one is required to accept incoming calls into livekit rooms.
+
+```bash
+lk sip outbound create outbound-trunk.json
