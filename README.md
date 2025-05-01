@@ -86,7 +86,19 @@ Navigate to Setting and Copy your SIP-URI
       lk sip inbound create inbound-trunk.json
 
 #### Create dispatcher rule 
-- As atleast one is required to accept incoming calls into livekit rooms.
+- As atleast one is required to accept incoming calls into livekit rooms:
 
-```bash
-lk sip outbound create outbound-trunk.json
+
+      lk sip outbound create outbound-trunk.json
+
+
+#### Installing Dependencies for AI Agent
+
+
+      pip install \
+        "livekit-agents[deepgram,openai,cartesia,silero,turn-detector]~=1.0" \
+        "livekit-plugins-noise-cancellation~=0.2" \
+        "python-dotenv"
+      "
+
+  
