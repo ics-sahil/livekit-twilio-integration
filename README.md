@@ -82,7 +82,7 @@ Navigate to Setting and Copy your SIP-URI
 
 - You'll be prompted to set the current project as default, select Yes. This can be changed later by editing the config.yaml file (the path to which will be logged after running the above commands)
 
-#### Create inbound trunk using inbound-trunk.json , make sure to update numbers :
+#### Create inbound trunk using inbound-trunk.json , make sure to update numbers in inbound-trunk.json :
       lk sip inbound create inbound-trunk.json
 
 #### Create dispatcher rule 
