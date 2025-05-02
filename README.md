@@ -4,9 +4,18 @@
 
 # For Inbound calls
 
+### 📦 Prerequisites
+- ##### Twilio Account
+- ##### LiveKit Account
+- ##### API Keys for:
+  - ##### Deepgram (DEEPGRAM_API_KEY)
+  - ##### OpenAI (OPENAI_API_KEY)
+  - ##### Cartesia (CARTESIA_API_KEY)
+
+
 ## Install twilio cli
 
-### using apt 
+### Using apt 
 
       wget -qO- https://twilio-cli-prod.s3.amazonaws.com/twilio_pub.asc \
         | sudo apt-key add -
@@ -34,7 +43,7 @@
 
 ## Now you have to configure your trunk for inbound calls:
 
-#### Configure an origination URI aka <you SIP host>
+#### Configure an origination URI aka your SIP host
 Go to liveKit. Create an account in case you dont have one.
 Navigate to Setting and Copy your SIP-URI
 
