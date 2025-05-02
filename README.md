@@ -43,7 +43,7 @@
 
 ## Now you have to configure your trunk for inbound calls:
 
-#### Configure an origination URI aka your SIP host
+#### Configure an origination URI AKA your SIP host
 Go to liveKit. Create an account in case you dont have one.
 Navigate to Setting and Copy your SIP-URI
 
