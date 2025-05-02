@@ -64,18 +64,19 @@ Navigate to Setting and Copy your SIP-URI
 - Search Elastic SIP OR 
 - Select Elastic SIP Trunking >> Manage >> Trunks.
 - Create SIP trunk.
-- For Inbound SIP
-  -- Navigate to Voice >> Manage >> Origination connection policy.
-- Select created origination policy.
-- Add the <SIP-URI>, weight, and priority as was done earlier during trunk configuration via the CLI.
 
-#### livekit set up
+#### For Inbound SIP
+- Navigate to Voice >> Manage >> Origination connection policy.
+- Select created origination policy.
+- Add the SIP-URI, weight, and priority as was done earlier during trunk configuration via the CLI.
+
+#### Livekit cli set up
    Install livekit cli
 
 #### Linux :
     curl -sSL https://get.livekit.io/cli | bash
 
-#### optionally authentication with cloud
+#### Optionally authentication with cloud
 - This is in order to avoid adding api-key and api-secret in each request manually
 
         lk cloud auth
