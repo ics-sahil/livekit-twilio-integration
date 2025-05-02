@@ -88,9 +88,7 @@ Navigate to Setting and Copy your SIP-URI
 #### Create dispatcher rule 
 - As atleast one is required to accept incoming calls into livekit rooms:
 
-
-    lk sip dispatch create dispatch-rule.json
-
+      lk sip dispatch create dispatch-rule.json
 
 #### Installing Dependencies for AI Agent
 
